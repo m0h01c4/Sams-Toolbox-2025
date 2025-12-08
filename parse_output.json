@@ -1,0 +1,600 @@
+{
+  "total_rows": 98,
+  "counts": {
+    "multi-tool": 54,
+    "hammer": 40,
+    "measuring-tape": 3,
+    "wrench": 1
+  },
+  "unmapped": [],
+  "mapping": {
+    "JJJ0086": {
+      "userId": "JJJ0086",
+      "name": "Janine Johnson",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "M0H01C4": {
+      "userId": "M0H01C4",
+      "name": "Michelle Acevedo",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "NSKIDMO": {
+      "userId": "NSKIDMO",
+      "name": "Nathan Skidmore",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "A0L0LYH": {
+      "userId": "A0L0LYH",
+      "name": "Ana Lasa",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "C0J0ATN": {
+      "userId": "C0J0ATN",
+      "name": "Christina Johnson",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "A0C0LTZ": {
+      "userId": "A0C0LTZ",
+      "name": "Allison Coker",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "J0ENGEL": {
+      "userId": "J0ENGEL",
+      "name": "John Engel",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "MPERE85": {
+      "userId": "MPERE85",
+      "name": "Michelle Perez",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "C0W06X5": {
+      "userId": "C0W06X5",
+      "name": "Carey Webb",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "B0R020K": {
+      "userId": "B0R020K",
+      "name": "Brittany Ralph",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "BPB000R": {
+      "userId": "BPB000R",
+      "name": "Paige Walker",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "S0H0I11": {
+      "userId": "S0H0I11",
+      "name": "Sophie Hobbs",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "K0W0D6U": {
+      "userId": "K0W0D6U",
+      "name": "Kenya Walker",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "G0S02NY": {
+      "userId": "G0S02NY",
+      "name": "Gracie Sitton",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "AWOODS6": {
+      "userId": "AWOODS6",
+      "name": "Amy Woods",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "SBCRAIG": {
+      "userId": "SBCRAIG",
+      "name": "Sarah Craig",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "RWJ001T": {
+      "userId": "RWJ001T",
+      "name": "Russell Jaynes",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "TMANGAN": {
+      "userId": "TMANGAN",
+      "name": "Toni Budrow",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "AAHOSTE": {
+      "userId": "AAHOSTE",
+      "name": "April Prideau",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "RELLIS2": {
+      "userId": "RELLIS2",
+      "name": "Ryan Ellis",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "RHOLDEN": {
+      "userId": "RHOLDEN",
+      "name": "Rashanda Holden",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "K0W0A2L": {
+      "userId": "K0W0A2L",
+      "name": "Kate Wright",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "K0O02SY": {
+      "userId": "K0O02SY",
+      "name": "Kristine Olson",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "K0H00SF": {
+      "userId": "K0H00SF",
+      "name": "Kathy Hill",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "ALM00C2": {
+      "userId": "ALM00C2",
+      "name": "Amanda Murphy",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "A0K025C": {
+      "userId": "A0K025C",
+      "name": "Ashley Kozlenko",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "R0H0J8V": {
+      "userId": "R0H0J8V",
+      "name": "Ricardo Hruschka-Bonds",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "M0V04J3": {
+      "userId": "M0V04J3",
+      "name": "Maria Varela",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "AMEDGEC": {
+      "userId": "AMEDGEC",
+      "name": "Ashley Edgecomb",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "K0B0DPK": {
+      "userId": "K0B0DPK",
+      "name": "Kelly Broome",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "TGCOX": {
+      "userId": "TGCOX",
+      "name": "Tiffanie Cox",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "K0C01FC": {
+      "userId": "K0C01FC",
+      "name": "Kevin Chirino",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "MEVENSO": {
+      "userId": "MEVENSO",
+      "name": "Misty Pettigrew",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "S0W0BLO": {
+      "userId": "S0W0BLO",
+      "name": "Sarah Windholtz",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "A0H0I9I": {
+      "userId": "A0H0I9I",
+      "name": "Anita Hart",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "ERS000W": {
+      "userId": "ERS000W",
+      "name": "Liz Sanchez",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "A0W0SXP": {
+      "userId": "A0W0SXP",
+      "name": "ANDREW WOODLE",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "T0R00BM": {
+      "userId": "T0R00BM",
+      "name": "Trina Rusher",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "ARBLUMA": {
+      "userId": "ARBLUMA",
+      "name": "Angela Bluma",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "D0LONG": {
+      "userId": "D0LONG",
+      "name": "David Long",
+      "rawAssigned": "Tape Measure",
+      "assignedKey": "measuring-tape"
+    },
+    "WUF000B": {
+      "userId": "WUF000B",
+      "name": "Wanda Fernandez Roman",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "SEKINS": {
+      "userId": "SEKINS",
+      "name": "Shellene Pace",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "AMARSH9": {
+      "userId": "AMARSH9",
+      "name": "Aaron Marshall",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "MAREID": {
+      "userId": "MAREID",
+      "name": "Marjorie Reid",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "YWARFIE": {
+      "userId": "YWARFIE",
+      "name": "Yoni Warfield",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "A0B091S": {
+      "userId": "A0B091S",
+      "name": "Ashley Boswell",
+      "rawAssigned": "Tape Measure",
+      "assignedKey": "measuring-tape"
+    },
+    "D0B0KWR": {
+      "userId": "D0B0KWR",
+      "name": "Danielle Bootes",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "A0K0BRJ": {
+      "userId": "A0K0BRJ",
+      "name": "Adam Kinney",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "S0W0LS4": {
+      "userId": "S0W0LS4",
+      "name": "Sara Weaver",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "N0D00B1": {
+      "userId": "N0D00B1",
+      "name": "Nektaria Droutsas",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "H0F01QK": {
+      "userId": "H0F01QK",
+      "name": "Holly Flaker",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "SCMASTE": {
+      "userId": "SCMASTE",
+      "name": "Sondra Masters",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "K0R0K1D": {
+      "userId": "K0R0K1D",
+      "name": "Kevin Reese",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "ALFOX": {
+      "userId": "ALFOX",
+      "name": "Andi Fox-Simpson",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "BMREICH": {
+      "userId": "BMREICH",
+      "name": "Brandon Reichard",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "E0L059A": {
+      "userId": "E0L059A",
+      "name": "Erin Launspach",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "C0A07J1": {
+      "userId": "C0A07J1",
+      "name": "Charles Allen",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "SEFREDE": {
+      "userId": "SEFREDE",
+      "name": "Shannon Frederick",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "C0M0L8N": {
+      "userId": "C0M0L8N",
+      "name": "Christina Manegold",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "VMPLAZA": {
+      "userId": "VMPLAZA",
+      "name": "Victor Plaza Rodriguez",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "B0B0HB8": {
+      "userId": "B0B0HB8",
+      "name": "Bethany Baker",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "HPHAM": {
+      "userId": "HPHAM",
+      "name": "Hang Agostini",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "JDODSO1": {
+      "userId": "JDODSO1",
+      "name": "Jennifer Dodson",
+      "rawAssigned": "Tape Measure",
+      "assignedKey": "measuring-tape"
+    },
+    "C0M0118": {
+      "userId": "C0M0118",
+      "name": "Cindy Menendez",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "R0O00TD": {
+      "userId": "R0O00TD",
+      "name": "Raley ONeill",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "LWADE": {
+      "userId": "LWADE",
+      "name": "Lyndsay Wade",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "M0P00G2": {
+      "userId": "M0P00G2",
+      "name": "Michael Palmer",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "TDAVI38": {
+      "userId": "TDAVI38",
+      "name": "Tolliver Davis",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "S0H0H3V": {
+      "userId": "S0H0H3V",
+      "name": "Shannon Hereford",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "M1COCHR": {
+      "userId": "M1COCHR",
+      "name": "Martenique Cochran",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "L4MAY": {
+      "userId": "L4MAY",
+      "name": "Lacy Smith",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "KMAI2": {
+      "userId": "KMAI2",
+      "name": "Kristi Mai",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "S0A09UO": {
+      "userId": "S0A09UO",
+      "name": "Shala Andrews",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "L2FOSTE": {
+      "userId": "L2FOSTE",
+      "name": "Latonya Foster",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "AHGUIDR": {
+      "userId": "AHGUIDR",
+      "name": "Alona Hollis",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "K0W03JQ": {
+      "userId": "K0W03JQ",
+      "name": "Katie Wilson",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "T0W0LXZ": {
+      "userId": "T0W0LXZ",
+      "name": "Tiffany Walker",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "C0M12AC": {
+      "userId": "C0M12AC",
+      "name": "Claire MacIntyre",
+      "rawAssigned": "Wrench",
+      "assignedKey": "wrench"
+    },
+    "SKSRIVA": {
+      "userId": "SKSRIVA",
+      "name": "Sanjiva Srivastava",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "R9FRANC": {
+      "userId": "R9FRANC",
+      "name": "Robbie Francis",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "KMOSS": {
+      "userId": "KMOSS",
+      "name": "Karie Moss",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "J0P15UW": {
+      "userId": "J0P15UW",
+      "name": "Joana Meza",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "A0B0K7I": {
+      "userId": "A0B0K7I",
+      "name": "April Browder",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "JFRADEL": {
+      "userId": "JFRADEL",
+      "name": "Janine Fradella",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "B0P04M5": {
+      "userId": "B0P04M5",
+      "name": "Brandon Paulino",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "LWOODS2": {
+      "userId": "LWOODS2",
+      "name": "Lacey Swearingen",
+      "rawAssigned": "Multi-Tool",
+      "assignedKey": "multi-tool"
+    },
+    "M0F00EX": {
+      "userId": "M0F00EX",
+      "name": "Matt Fisher",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "N0F008X": {
+      "userId": "N0F008X",
+      "name": "Nathan Floyd",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "CMCCLUN": {
+      "userId": "CMCCLUN",
+      "name": "Chelsea Johnson",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "M3COOPE": {
+      "userId": "M3COOPE",
+      "name": "Mandi Cooper",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "JGONZ79": {
+      "userId": "JGONZ79",
+      "name": "Joann Baker",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "KTHOM14": {
+      "userId": "KTHOM14",
+      "name": "Kathleen Thompson",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "J0C0KD0": {
+      "userId": "J0C0KD0",
+      "name": "Joe Campbell",
+      "rawAssigned": "Hammer",
+      "assignedKey": "hammer"
+    },
+    "E0D05EC": {
+      "userId": "E0D05EC",
+      "name": "Liz Dufour",
+      "rawAssigned": "Hammer/Problem Solver",
+      "assignedKey": "hammer"
+    },
+    "EPDUNCA": {
+      "userId": "EPDUNCA",
+      "name": "Erika Duncan",
+      "rawAssigned": "Multi-Tool/Adapter",
+      "assignedKey": "multi-tool"
+    },
+    "EGOAD": {
+      "userId": "EGOAD",
+      "name": "Elizabeth Goad",
+      "rawAssigned": "Hammer/Problem Solver",
+      "assignedKey": "hammer"
+    },
+    "HPALME1": {
+      "userId": "HPALME1",
+      "name": "Heidi Palmer",
+      "rawAssigned": "Multi-Tool/Adapter",
+      "assignedKey": "multi-tool"
+    },
+    "ADECHOL": {
+      "userId": "ADECHOL",
+      "name": "Alisa Fox",
+      "rawAssigned": "Multi-Tool/Adapter",
+      "assignedKey": "multi-tool"
+    }
+  }
+}
