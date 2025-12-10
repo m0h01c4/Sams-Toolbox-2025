@@ -128,7 +128,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin-bottom: 30px;
-            background: url('people toolbox.png') no-repeat center center;
+            background: url('blue toolbox.png') no-repeat center center;
             background-size: contain;
             filter: drop-shadow(0 15px 30px rgba(0, 113, 206, 0.3));
         }
@@ -838,19 +838,8 @@
 <body>
     <!-- Instructions Modal -->
     <div class="modal-overlay" id="instructions-modal">
-        <div class="modal" id="entry-modal">
-            <h2>Please take this survey to determine your tool</h2>
-            <p style="margin-bottom: 20px; color: #718096;">Enter your User ID below to begin.</p>
-            <input type="text" class="user-id-input" id="user-id" placeholder="Enter your User ID" maxlength="60">
-            <br>
-            <div id="assignments-status" style="margin-top:10px; font-size:0.9em; color:#718096;"></div>
-            <div style="margin-top:8px; display:flex; justify-content:center; gap:10px; align-items:center;">
-                <button class="modal-btn" onclick="showSurveyModal()">Continue</button>
-            </div>
-        </div>
-        <!-- Survey Modal -->
-        <div class="modal-overlay" id="survey-modal" style="display:none;">
-            <div class="modal" style="max-width:700px;">
+        <!-- Survey Modal (now shown by default) -->
+        <div class="modal" id="survey-modal" style="max-width:700px;">
                 <h2>Please rate the following statements based on how much they describe you by using the scale:</h2>
                 <form id="tool-survey">
                     <table style="width:100%;margin-top:20px;margin-bottom:20px;border-collapse:collapse;">
@@ -952,15 +941,7 @@
             </div>
         </div>
         <script>
-            function showSurveyModal() {
-                var userId = document.getElementById('user-id').value.trim();
-                if (!userId) {
-                    showTransientNotice('Please enter your User ID', 3000);
-                    return;
-                }
-                document.getElementById('entry-modal').style.display = 'none';
-                document.getElementById('survey-modal').style.display = 'flex';
-            }
+
 
             document.getElementById('tool-survey').onsubmit = function(e) {
                 e.preventDefault();
@@ -992,6 +973,10 @@
                 window.surveyToolScores = scores;
                 window.surveyAssignedKey = assignedKey;
                 document.getElementById('survey-modal').style.display = 'none';
+                // Set generic user info for reveal
+                currentUser.name = 'Participant';
+                currentUser.id = 'SURVEY';
+                document.getElementById('toolbox-screen').style.display = 'block';
                 revealTool(assignedKey);
             };
 
@@ -1005,9 +990,7 @@
     <!-- Toolbox Reveal Screen -->
     <div class="game-container" id="toolbox-screen" style="display: none;">
         <div class="game-header">
-            <div class="sams-club-logo">
-                <span class="game-logo-text" style="font-size:2em;font-weight:bold;color:#0071ce;">Tools of the Trade</span>
-            </div>
+            <!-- Logo removed for toolbox reveal screen -->
             <h1 class="game-title">Your Personal Tool</h1>
         </div>
         
@@ -1033,9 +1016,8 @@
     <div class="game-container" id="main-game" style="display: none;">
         <div class="game-header">
             <div class="sams-club-logo">
-                <span class="game-logo-text" style="font-size:2em;font-weight:bold;color:#0071ce;">Tools of the Trade</span>
+                <span class="game-logo-text" style="font-size:2em;font-weight:bold;color:#0071ce;"></span>
             </div>
-            <!-- Removed duplicate Tools of the Trade heading -->
             <p class="game-subtitle">Test your knowledge and team skills!</p>
             <div id="user-tool-display" style="margin-top: 15px; font-size: 1.1em; color: #0071ce;"></div>
         </div>
@@ -1084,9 +1066,6 @@
     <!-- Networking Game -->
     <div class="game-container networking-container" id="networking-game">
         <div class="networking-header">
-            <div class="sams-club-logo">
-                <span class="game-logo-text" style="font-size:2em;font-weight:bold;color:#0071ce;">Tools of the Trade</span>
-            </div>
             <h1 class="game-title">Tools of the Trade</h1>
             <p class="game-subtitle">Find your team members and build your network!</p>
         </div>
@@ -1794,40 +1773,37 @@
 
         // New functions for toolbox reveal (manual selection)
     async function revealTool(surveyAssignedKey) {
-        const raw = document.getElementById('user-id').value.trim();
-        if (!raw) {
-            showTransientNotice('Please enter your User ID', 3000);
-            return;
-        }
-
-        const idUpper = raw.toUpperCase();
-        const idLower = raw.toLowerCase();
-        currentUser.id = idUpper;
-
-        // If surveyAssignedKey is provided, use it for assignment
         if (surveyAssignedKey) {
-            currentUser.name = raw;
+            // Survey flow: skip user ID, assign generic name/id
+            currentUser.name = 'Participant';
+            currentUser.id = 'SURVEY';
             currentUser.tool = tools[surveyAssignedKey] || tools['multi-tool'];
-            showTransientNotice('Your tool has been assigned based on your survey responses!', 3000);
+            showTransientNotice('Your tool has been assigned based on your survey responses!', 2000);
         } else {
+            // Legacy/manual flow: require user ID input
+            const raw = document.getElementById('user-id').value.trim();
+            if (!raw) {
+                showTransientNotice('Please enter your User ID', 3000);
+                return;
+            }
+            const idUpper = raw.toUpperCase();
+            const idLower = raw.toLowerCase();
+            currentUser.id = idUpper;
+
             // If assignments not loaded yet (common when opening via file://), attempt quick loads
             if (!assignmentsById || Object.keys(assignmentsById).length === 0) {
                 setAssignmentsStatus('Assignments not loaded. Attempting to auto-load mapping...', false);
-                // Try JSON mapping if the embedded mapping wasn't present for some reason
                 try {
                     await loadAssignmentsFromJSON();
                 } catch (e) {
                     console.warn('Auto-load JSON attempt failed:', e);
                 }
-
                 if (!assignmentsById || Object.keys(assignmentsById).length === 0) {
                     showTransientNotice('Assignments not loaded; proceeding with default assignment behavior.', 3500);
                 }
             }
-
             // Robust lookup: try exact ID (upper/lower), then exact name match, then name contains
             let rec = assignmentsById[idUpper] || assignmentsById[idLower] || null;
-
             if (!rec) {
                 const search = raw.toLowerCase();
                 for (const k in assignmentsById) {
@@ -1838,7 +1814,6 @@
                     }
                 }
             }
-
             if (!rec) {
                 const search = raw.toLowerCase();
                 for (const k in assignmentsById) {
@@ -1849,7 +1824,6 @@
                     }
                 }
             }
-
             if (rec) {
                 currentUser.name = rec.name || idUpper;
                 const assignedKey = rec.assignedKey || (rec.rawAssigned && rec.rawAssigned.toLowerCase());
@@ -1862,11 +1836,9 @@
                 showTransientNotice('User ID not found in assignments. Defaulting to Multi-Tool so you can continue.', 4500);
             }
         }
-
         // Hide instructions modal and show toolbox
         document.getElementById('instructions-modal').style.display = 'none';
         document.getElementById('toolbox-screen').style.display = 'block';
-
         // Trigger toolbox opening after a brief delay
         setTimeout(() => openToolbox(), 800);
     }
@@ -2347,7 +2319,7 @@
         // Initialize display
         elements.totalQuestions.textContent = gameData.questions.length;
 
-        // Attempt to load JSON mapping on load; then show instructions modal.
+        // Attempt to load JSON mapping on load; then show survey modal directly (skip sign-on).
         window.addEventListener('load', async function() {
             try {
                 await loadAssignmentsFromJSON();
@@ -2355,6 +2327,10 @@
                 console.warn('Failed to auto-load parse_output.json on load:', e);
             }
             document.getElementById('instructions-modal').style.display = 'flex';
+            document.getElementById('survey-modal').style.display = 'block';
+            // Remove entry modal if present
+            var entryModal = document.getElementById('entry-modal');
+            if (entryModal) entryModal.style.display = 'none';
         });
     </script>
 
